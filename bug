@@ -1,0 +1,21 @@
+# BUG-001 | 2 icon (logo) bị lệch nhau so với căn chỉnh trên khung màn hình
+
+| Trường | Giá trị |
+|--------|---------|
+| **Tiêu đề (Title)** | 2 icon (AIROC và Synapse City) bị lệch nhau trên giao diện Pythaverse Malaysia |
+| **Link trang kiểm thử** | `Trang web Pythaverse phiên bản Malaysia` |
+| **API Endpoint** | Không có (trang frontend) |
+| **Môi trường** | QA / Staging / Production |
+| **Mức độ ưu tiên** | 🟡 Medium |
+| **Dịch vụ bị ảnh hưởng** | Frontend |
+| **Admin/Core Service** | Không liên quan |
+| **Tài khoản sử dụng** | Không cần |
+| **Mật khẩu** | Không cần |
+| **Mô tả lỗi đang gặp phải** | Hai icon/logo (AIROC và Synapse City) đang hiển thị bị lệch nhau trên khung màn hình. Do cấu trúc lưới (`grid`) hiện tại đang đặt logo AIROC ở `col-start-1 row-start-1 justify-self-start` (cột 1, hàng 1, căn trái) và logo Synapse City ở `col-start-2 row-start-2 justify-self-end` (cột 2, hàng 2, căn phải) dẫn đến việc chúng bị sắp xếp chéo nhau thay vì nằm ngang hàng hoặc căn chỉnh hợp lý. |
+| **Các bước thực hiện** | 1. Truy cập vào trang web Pythaverse phiên bản Malaysia.<br>2. Kéo đến khu vực hiển thị các logo đối tác (AIROC và Synapse City).<br>3. Quan sát vị trí và căn chỉnh của 2 logo. |
+| **Kết quả mong đợi** | ✅ Hai logo phải được căn chỉnh cân đối trên khung màn hình (ví dụ: cùng một hàng thẳng ngang, hoặc chia đều khoảng cách trên cùng một hàng). |
+| **Kết quả thực tế** | ❌ Hai logo đang bị lệch hàng và cột, hiển thị chéo góc nhau trông mất thẩm mỹ. |
+| **Payload (Request)** | Để trống |
+| **Response (API)** | Để trống |
+| **Hình ảnh** | ![Trạng thái lỗi hiện tại](screenshot_01_current_state.png) |
+| **Trạng thái** | ❌ Fail |
