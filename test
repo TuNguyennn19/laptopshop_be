@@ -1,0 +1,24 @@
+Dưới đây là một vài mẫu (khung prompt) đơn giản và hiệu quả mà bạn có thể sử dụng để yêu cầu AI (như tôi) hoặc hướng dẫn người khác đẩy code lên Git:
+
+Mẫu 1: Dành cho dự án cá nhân (Nhanh gọn)
+"Hãy giúp tôi đẩy những thay đổi mới nhất lên Github.
+
+Lưu tất cả thay đổi (git add).
+Commit với thông điệp: '[Mô tả ngắn gọn về những gì bạn vừa làm, ví dụ: Cập nhật giao diện trang chủ]'.
+Đẩy lên nhánh main/master."
+Mẫu 2: Dành cho dự án nhóm (Chuyên nghiệp hơn)
+"Thực hiện quy trình commit và push code lên Git cho tính năng [Tên tính năng]:
+
+Kiểm tra trạng thái các file đã thay đổi (git status).
+Thêm các file cần thiết (git add .).
+Tạo commit message theo chuẩn: '[feat/bugfix/docs/refactor]: [Mô tả chi tiết thay đổi]'.
+Kéo code mới nhất về để tránh xung đột (git pull origin [tên_nhánh]).
+Đẩy code lên remote (git push origin [tên_nhánh])."
+Mẫu 3: Xử lý lỗi Git
+"Tôi đang gặp lỗi [dán thông báo lỗi vào đây] khi cố gắng push code lên Git. Hãy phân tích nguyên nhân và cung cấp cho tôi các lệnh chính xác để khắc phục và đẩy code thành công."
+
+💡 Mẹo nhỏ khi dùng prompt với AI: Nếu bạn đang dùng AI tích hợp trực tiếp trong IDE (như Cursor, GitHub Copilot Chat, hoặc môi trường hiện tại của chúng ta), bạn chỉ cần nói một câu đơn giản: "Hãy tạo một commit message phù hợp dựa trên những thay đổi hiện tại của tôi và push nó lên nhánh hiện hành." AI sẽ tự động đọc các file bạn đã sửa và làm phần việc còn lại.
+
+Bạn có muốn tôi thực hiện việc đẩy code nào đó trong thư mục hiện tại (f:\kiểm thử cùng brien) của bạn lên Git luôn không?
+
+10:42 AM
